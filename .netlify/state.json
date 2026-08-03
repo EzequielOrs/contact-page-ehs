@@ -1,0 +1,21 @@
+{
+	"dbConnectionString": "postgres://localhost:64390/postgres",
+	"geolocation": {
+		"data": {
+			"city": "Hurlingham",
+			"country": {
+				"code": "AR",
+				"name": "Argentina"
+			},
+			"subdivision": {
+				"code": "B",
+				"name": "Buenos Aires"
+			},
+			"timezone": "America/Argentina/Buenos_Aires",
+			"latitude": -34.5996,
+			"longitude": -58.6266,
+			"postalCode": "1686"
+		},
+		"timestamp": 1780367015781
+	}
+}
