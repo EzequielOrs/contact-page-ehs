@@ -1,95 +1,333 @@
-<link rel="stylesheet" href="./src/style.css">
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVP SPA with contact form</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empresa de seguridad e higiene</title>
+        <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    <!-- HEADER / HERO section -->
-    <header class="hero">
-        <div class="container">
-            <h1>MVP SPA with contact form</h1>
-            <p>Impulsamos a tu empresa con soluciones integrales en ambiente, seguridad y gestión.</p>
-            <a href="#contact" class="btn-primary">Escribinos</a>
-        </div>
-    </header>
-
-    <!-- SERVICES SECTION -->
-    <section class="services container">
-        <h2>Nuestros Servicios</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Gestión Ambiental</h3>
-                <ul>
-                    <li>Planes de evacuación</li>
-                    <li>Estudio de carga de fuego</li>
-                    <li>Estudios antisiniestrales</li>
+    <main>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">
+                    Consultora EHS
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
-            <div class="card">
-                <h3>Seguridad e Higiene</h3>
-                <ul>
-                    <li>Capacitaciones</li>
-                    <li>Trabajos en altura</li>
-                    <li>Mediciones laborales</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Proyectos - Capital Humano</h3>
-                <ul>
-                    <li>Consultoría estratégica</li>
-                    <li>Optimización organizacional</li>
-                    <li>Gestión integral</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- PROMOTIONS SECTION -->
-    <section class="promotions">
-        <div class="container">
-            <h2>Promociones</h2>
-            <div class="promo-grid">
-                <div class="promo-card">
-                    <h4>Servicio de SeH Anual</h4>
-                    <p>Beneficios exclusivos para clientes anuales.</p>
-                </div>
-                <div class="promo-card">
-                    <h4>Descuentos por cliente</h4>
-                    <p>Bonificaciones por contratación continua.</p>
-                </div>
-                <div class="promo-card">
-                    <h4>Referidos</h4>
-                    <p>Programa de beneficios por recomendación.</p>
-                </div>
+         <!-- HEADER / HERO section -->
+        <header class="hero" id="top">
+        <!-- <div class="hero-overlay"></div> -->
+            <div class="container hero-content">
+                <span class="hero-eyebrow">HIGIENE · SEGURIDAD · MEDIO AMBIENTE</span>
+                <h1>Consultora EHS</h1>
+                <p>Impulsamos a tu empresa con soluciones integrales en ambiente, seguridad y gestión.</p>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- CONTACT FORM -->
-    <section id="contact" class="contact container">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
+        <!-- ABOUT SECTION-->
+        <section id="about" class="about">
+            <div class="about-background"></div>
+            <div class="container about-content">
+                <div class="about-copy">
+                    <h2>
+                        Experiencia técnica.
+                        <span>Soluciones a medida.</span>
+                    </h2>
+                    <p>
+                        Somos una consultora especializada en Higiene y Seguridad
+                        Laboral y Medio Ambiente, integrada por un equipo
+                        multidisciplinario de profesionales con sólida formación
+                        técnica y amplia trayectoria en el sector.
+                        Ofrecemos una cobertura integral de servicios capaz de dar
+                        respuesta a cada necesidad particular, sin perder de vista
+                        la eficiencia de sus operaciones.
+                        Trabajamos con comunicación directa y fluida con cada
+                        cliente, intercambiando criterios y construyendo soluciones
+                        a medida para alcanzar el cumplimiento técnico legal que
+                        su organización requiere.
+                    <p>
+                        Nos respalda el compromiso de acompañar a cada empresa no
+                        solo en el cumplimiento normativo, sino en la construcción
+                        de una cultura de trabajo más segura y ambientalmente
+                        responsable.
+                    </p>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="email">Correo</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Enviar</button>
-        </form>
-        
-        <p id="status"></p>
-    </section>
+        </section>
 
-    <script type="module" src="./src/main.js"></script>
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services">
+            <div class="section-heading">
+                <span class="section-eyebrow">QUÉ HACEMOS</span>
+                <h2>Servicios especializados</h2>
+                <p>
+                    Una cobertura integral para acompañar a tu organización
+                    en cada etapa.
+                </p>
+            </div>
+
+            <div class="services-list">
+                <article class="service-block service-environment">
+                    <div class="service-background"></div>
+                    <div class="service-overlay"></div>
+                    <div class="service-content">
+                        <span class="service-number">01</span>
+                        <h3>Gestión Ambiental</h3>
+                        <p>
+                            Elaboración de documentación, planes de gestión de
+                            residuos, estudios de impacto ambiental y matrices
+                            en base a ISO 14001, entre otros.
+                        </p>
+                        <a href="#contact" class="service-link">
+                            Consultar servicio →
+                        </a>
+                    </div>
+                </article>
+                <article class="service-block service-safety">
+                    <div class="service-background"></div>
+                    <div class="service-overlay"></div>
+                    <div class="service-content">
+                        <span class="service-number">02</span>
+                        <h3>Seguridad e Higiene</h3>
+                        <p>
+                            Asesoramiento en Higiene y Seguridad Laboral conforme
+                            a la Ley 19.587 y sus decretos reglamentarios.
+                            Elaboración de programas y matrices de riesgo.
+                        </p>
+                        <a href="#contact" class="service-link">
+                            Consultar servicio →
+                        </a>
+                    </div>
+                </article>
+                <article class="service-block service-permits">
+                    <div class="service-background"></div>
+                    <div class="service-overlay"></div>
+                    <div class="service-content">
+                        <span class="service-number">03</span>
+                        <h3>Habilitaciones y Permisos</h3>
+                        <p>
+                            Gestión ante organismos municipales y provinciales
+                            para la obtención de habilitaciones, certificados
+                            y declaraciones juradas.
+                        </p>
+                        <a href="#contact" class="service-link">
+                            Consultar servicio →
+                        </a>
+                    </div>
+                </article>
+                <article class="service-block service-monitoring">
+                    <div class="service-background"></div>
+                    <div class="service-overlay"></div>
+                    <div class="service-content">
+
+                        <span class="service-number">04</span>
+
+                        <h3>Monitoreos y Mediciones</h3>
+
+                        <p>
+                            Coordinación de mediciones de ruido, iluminación,
+                            agentes químicos y efluentes. Informes técnicos
+                            para presentación ante autoridades competentes.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Consultar servicio →
+                        </a>
+
+                    </div>
+                </article>
+                <article class="service-block service-training">
+                    <div class="service-background"></div>
+                    <div class="service-overlay"></div>
+                    <div class="service-content">
+                        <span class="service-number">05</span>
+                        <h3>Capacitaciones</h3>
+                        <p>
+                            Desarrollo y dictado de cursos de higiene y seguridad,
+                            manejo de residuos, uso de EPP y concientización
+                            ambiental para el personal de su empresa.
+                        </p>
+                        <a href="#contact" class="service-link">
+                            Consultar servicio →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--  WORK EXPERIENCE SECTION -->
+        <section id="projects" class="experience">
+            <div class="container">
+                <div class="section-heading section-heading-dark">
+                    <span class="section-eyebrow">TRABAJOS REALIZADOS</span>
+                    <h2>Nuestra experiencia</h2>
+                    <p>
+                        Experiencia aplicada en distintos sectores y necesidades
+                        empresariales.
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="card-line"></span>
+                        </div>
+                        <h3>
+                            Asesores externos en normas ISO 14001 e ISO 45001
+                        </h3>
+                        <p>
+                            Consultoría para la implementación y certificación
+                            de sistemas de gestión ambiental (ISO 14001) y de
+                            seguridad y salud en el trabajo (ISO 45001),
+                            incluyendo diagnóstico, capacitación y auditorías
+                            internas.
+                        </p>
+                        <span class="badge">
+                            Certificación ISO obtenida en empresas cliente
+                        </span>
+                    </article>
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="card-line"></span>
+                        </div>
+                        <h3>
+                            Estudio de Impacto Ambiental para Desarrollo Urbano
+                        </h3>
+                        <p>
+                            Elaboración del EIA para un emprendimiento
+                            urbanístico, incluyendo relevamiento de línea de
+                            base, análisis de impactos y medidas de mitigación
+                            para su aprobación ante autoridad ambiental.
+                        </p>
+                        <span class="badge">
+                            Aprobación ambiental del proyecto obtenida
+                        </span>
+                    </article>
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="card-line"></span>
+                        </div>
+                        <h3>
+                            Asesoramiento integral a PyMEs bonaerenses
+                        </h3>
+                        <p>
+                            Acompañamiento continuo a pequeñas y medianas
+                            empresas en el cumplimiento de obligaciones legales
+                            en materia ambiental y de seguridad laboral, desde
+                            la documentación hasta la relación con organismos
+                            de control.
+                        </p>
+                        <span class="badge">
+                            Más de 40 PyMEs regularizadas
+                        </span>
+                    </article>
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="card-line"></span>
+                        </div>
+                        <h3>
+                            Adecuación normativa integral para empresa de transporte
+                        </h3>
+                        <p>
+                            Revisión y actualización de toda la documentación
+                            exigida por SRT. Plan de emergencia, capacitaciones
+                            y adecuación de EPP.
+                        </p>
+                        <span class="badge">
+                            100% de conformidad en auditoría SRT
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact" class="contact">
+            <div class="container contact-layout">
+
+                <div class="contact-intro">
+
+                    <span class="section-eyebrow">CONTACTO</span>
+
+                    <h2>
+                        Hablemos de
+                        <span>tu proyecto.</span>
+                    </h2>
+
+                    <p>
+                        Completá el formulario y nos pondremos en contacto
+                        para conocer tus necesidades y analizar cómo podemos
+                        ayudarte.
+                    </p>
+
+                    <div class="contact-details">
+                        <div>
+                            <span>Zona de actuación</span>
+                            <strong>Buenos Aires y Gran Buenos Aires</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form-wrapper">
+
+                    <form id="contact-form">
+
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            Enviar consulta
+                        </button>
+
+                    </form>
+
+                    <p id="status" aria-live="polite"></p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <script type="module" src="./src/main.js"></script>
+     </main>
 </body>
 </html>

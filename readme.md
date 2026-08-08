@@ -19,8 +19,7 @@ the netlify function uses Nodemailer and is written in vanilla JS so we don't ne
 - Netlify serverless functions
 
 ### Things to improve
-- Testing
-- Styles
+- Improve responsive.
 - accessibility
-- Responsive elements
-- Security/validations
+- SEO
+- Security/validations if needed.
