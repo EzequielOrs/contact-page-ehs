@@ -42,3 +42,17 @@ else {
     }
   });
 }
+
+const whatsappNumber = import.meta.env.WHATSAPP_NUMBER;
+const whatsappButtonLink = document.querySelector("#whatsapp-button-link");
+
+if (whatsappButtonLink && whatsappNumber) {
+    const message = encodeURIComponent(
+        "Hola, quisiera realizar una consulta sobre sus servicios."
+    );
+
+    whatsappButtonLink.href = `https://wa.me/${whatsappNumber}?text=${message}`;
+}
+else {
+  console.error("No whatsapp number or button Id detected.")
+}
