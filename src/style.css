@@ -86,7 +86,7 @@ p {
     top: 0;
     z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(255, 255, 255, 0.986);
     border-bottom: 3px solid rgba(223, 231, 239, 0.8);
 
     backdrop-filter: blur(12px);
@@ -265,6 +265,7 @@ p {
     font-size: 1rem;
     line-height: 1.65;
     text-shadow: 0 8px 6px rgba(0, 0, 0, 0.25);
+    text-align: justify;
 }
 .about-content p:last-child {
     margin-bottom: 0;
@@ -325,42 +326,54 @@ p {
 /* ------------------------------------ SERVICES -  Full-width visual section ------------------------------------ */
 .services {
     width: 100%;
-    padding: 0;
-    background:
+    padding: 0 0 100px;
+
+    background: radial-gradient(
+            circle at 15% 20%,
+            rgba(30, 58, 95, 0.12),
+            transparent 35%
+        ),
         radial-gradient(
-            ellipse at 50% 50%,
+            circle at 85% 80%,
             rgba(22, 199, 154, 0.08),
-            transparent 45%
+            transparent 35%
         ),
         linear-gradient(
-            180deg,
-            #ffffff 0%,
-            #f7f9fc 100%
+            135deg,
+            #eef2f6 0%,
+            #dce3ea 45%,
+            #f4f7fa 100%
         );
 }
 
 /* ------------------------------------ SERVICE SECTION HEADER------------------------------------ */
+
 .services .section-heading {
-    width: 100%;
-    margin: 0 1 55px;
-    padding: 20px 20px;
+    width: min(900px, 92%);
+    margin: 0 auto 70px;
+    padding: 20px 10;
     text-align: center;
 }
 
 /* ------------------------------------ SERVICE BLOCK ------------------------------------ */
 .services-list {
-    width: 100%;
+    width: 90%;
+    padding-top: 50px;
+    margin: 0 auto 35px;
     position: relative;
     z-index: 1;
 }
+
 .service-block {
     --service-color: var(--green);
+    margin: 0 auto 35px;
     position: relative;
     min-height: 520px;
     display: flex;
     align-items: center;
     overflow: hidden;
     color: white;
+    border-radius: 24px;
 
      box-shadow:
         0 12px 100px rgba(10, 30, 50, 0.12),
@@ -413,26 +426,18 @@ p {
 
     z-index: 1;
 
-    /*
-     * Strong gradient on the left,
-     * progressively revealing the
-     * image on the right.
-     */
-
     background:
         linear-gradient(
             90deg,
-
-            rgba(16, 42, 67, 0.98) 0%,
-
-            rgba(16, 42, 67, 0.94) 30%,
-
-            rgba(16, 42, 67, 0.75) 52%,
-
-            rgba(16, 42, 67, 0.30) 75%,
-
-            rgba(16, 42, 67, 0.10) 100%
+            rgba(16, 42, 67, 0.82) 0%,
+            rgba(16, 42, 67, 0.72) 35%,
+            rgba(16, 42, 67, 0.45) 60%,
+            rgba(16, 42, 67, 0.18) 80%,
+            rgba(16, 42, 67, 0.08) 100%
         );
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 /* ------------------------------------ SERVICE CONTENT ------------------------------------ */
@@ -517,6 +522,7 @@ p {
 }
 .section-heading-dark p {
     color: rgba(255, 255, 255, 0.68);
+    margin-bottom: 20px;
 }
 .experience .cards {
     display: grid;
@@ -545,7 +551,7 @@ p {
     align-items: center;
     gap: 15px;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .card-line {
     width: 50px;
@@ -561,6 +567,7 @@ p {
     font-size: 0.96rem;
     padding: 5px;
     margin-bottom: 10px;
+    text-align: justify;
 }
 .badge {
     display: inline-block;
@@ -703,6 +710,168 @@ textarea {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(22, 199, 154, 0.08),
+            transparent 30%
+        ),
+        #101918;
+
+    color: #fff;
+    padding: 70px 0 0;
+}
+
+.footer-container {
+    width: min(92%, 1200px);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 70px;
+
+    padding-bottom: 55px;
+}
+
+/* BRAND */
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #fff;
+    text-decoration: none;
+
+    margin-bottom: 20px;
+}
+
+.logo-mark {
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 8px;
+
+    background: #16c79a;
+    color: #101918;
+
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.logo-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.footer-brand p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* COLUMNS */
+
+.footer-column h3 {
+    margin: 0 0 20px;
+
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    color: #16c79a;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a,
+.footer-contact a,
+.footer-contact span {
+    color: rgba(255, 255, 255, 0.68);
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #16c79a;
+    transform: translateX(3px);
+}
+
+/* BOTTOM BAR */
+
+.footer-bottom {
+    width: min(92%, 1200px);
+    margin: 0 auto;
+
+    min-height: 70px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.45);
+    text-decoration: none;
+
+    font-size: 0.85rem;
+
+    transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #16c79a;
+}
+
+
+
+
+
 
 /* ---------------------------------------------------------------------------------- RESPONSIVE ------------------------------------------------------------------------------------------------------- */
 
@@ -899,3 +1068,51 @@ textarea {
         animation-duration: 0.01ms !important;
     }
 }
+
+
+
+/* =========================
+   FOOTER RESPONSIVE
+========================= */
+
+/* @media (max-width: 768px) {
+
+    .site-footer {
+        padding-top: 55px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 500px;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+} */
